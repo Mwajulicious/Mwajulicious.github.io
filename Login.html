@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Contact_us.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="./index.html">Carriculam Vitae</a></li>
+            <li><a href="./Contact_us.html">Contact us</a></li>
+        </ul>
+       </nav>
+       <section>
+           <div class="box">
+        <h1 style="color: black;"><center>Login Form</center></h1>
+        <form id="input">
+            <div class="inputs">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username">
+                <label for="password">Password:</label>
+                <input type="text" id="password" name="password">
+                <button class="login">login</button>
+               
+               
+            </div>
+        </form>
+        <hr>
+        <div id="info">
+
+        </div>
+    <script>
+        let contactinf = document.querySelector('.login');
+        contactinf.addEventListener('click',function(event){
+        event.preventDefault();
+        let nam = document.querySelector('#username').value;
+        let pass = document.querySelector('#password').value;
+    
+    
+     if (nam === "admin" && pass === "password") {
+           let contacts = JSON.parse(localStorage.getItem("contacts"))||[];
+           let contactinfo = "";
+           for(let a = 0;a < contacts.length;a++) {
+                 contactinfo += "<h1>" + (a+1) + "</h1>";
+                 contactinfo += "<p><strong>NAME:</strong>" + contacts[a].name + "</p>";
+                 contactinfo += "<p><strong>EMAIL:</strong>" + contacts[a].email + "</p>";
+                 contactinfo += "<p><strong>ADDRESS:</strong>" + contacts[a].address + "</p>";
+                 contactinfo += "<p><strong>COMMENT:</strong>" + contacts[a].comment + "</p>";
+             };
+            
+             document.getElementById("info").innerHTML=contactinfo;
+     }
+     else {
+         alert("invalid username or password");
+     };
+    
+    //  box-form.reset();
+    
+     });
+    
+    
+    </script>
+        </div>
+        </section>
+</body>
+
+</html>

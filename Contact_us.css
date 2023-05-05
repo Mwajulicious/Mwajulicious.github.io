@@ -1,0 +1,107 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: grey;
+    
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.navbar{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color:grey;
+    position: sticky;
+    top:0px;
+    padding-left: 100px;
+    margin-top: 0px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.navbar ul{
+    display: flex;
+    list-style: none;
+    margin: 20px 0px;
+    
+    
+}
+
+.navbar ul li{
+    font-family: century;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 5px;
+    display:inline-block ;
+    list-style: none;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 8px 25px;
+    transition: all .6s ease;
+    
+}
+ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 5px;
+    
+}
+form {
+	width: 300px;
+	margin: 0 auto;
+}
+
+label {
+	display: block;
+	margin-top: 10px;
+}
+
+input[type="text"],input[type="email"]{
+	width: 100%;
+	padding: 10px;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	
+	border-radius: 5px;
+}
+
+input[type="button"] {
+	background-color: chocolate;
+	color: white;
+	padding: 10px 20px;
+	margin-top: 10px;
+	
+	border-radius: 5px;
+	cursor: pointer;
+} 
+
+
+
+.box{
+    display: flex;
+    flex-direction: column;
+    width:1255px;
+    height: 1070px;
+    border: 1px SOLID black;
+    box-shadow: inset;
+    margin: top 800px;
+    margin-left: 40px;
+    margin-right: 100px;
+    /* align-items: center; */
+    text-align: justify;
+    padding-left: 4px;
+    border-radius: 10px;
+    background-color:wheat;
+    background-size: 500px 500px;
+}
+map{
+	width: 300px;
+	margin: 0 auto;
+}

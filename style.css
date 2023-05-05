@@ -1,0 +1,109 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color:black;
+    
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.navbar{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color:grey;
+    position: sticky;
+    top:0px;
+    padding-left: 100px;
+    margin-top: 0px;
+    margin-left: 40px;
+    margin-right: 28px;
+}
+
+.navbar ul{
+    display: flex;
+    list-style: none;
+    margin: 20px 0px;
+    
+    
+}
+
+.navbar ul li{
+    font-family: century;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 5px;
+    display:inline-block ;
+    list-style: none;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 8px 25px;
+    transition: all .6s ease;
+    
+}
+ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 5px;
+    
+}
+
+
+.navbar ul li a:hover{
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 10px rgb(202, 96, 96);
+}
+
+    .heading{
+        font-family: century;
+        font-size: 2rem;
+        text-align: center;
+        margin-top: 0px;
+        margin-bottom: 4px;
+        padding-top: 0px;
+
+    }
+
+
+
+/*portfolio section*/
+/* #portfolio{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    align-items: center;
+    padding: 10px;
+
+} */
+
+
+
+.box{
+    display: flex;
+    flex-direction: column;
+    width:1255px;
+    height: 1800px;
+    border: 1px SOLID black;
+    box-shadow: inset;
+    margin: top 800px;
+    margin-left: 40px;
+    margin-right: 100px;
+    /* align-items: center; */
+    text-align: justify;
+    padding-left: 4px;
+    border-radius: 10px;
+    background-color:wheat;
+    background-size: 1000% 100%;
+    /* transition: all .9s; */
+   
+ 
+}
+
